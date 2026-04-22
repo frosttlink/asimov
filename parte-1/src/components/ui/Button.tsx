@@ -14,7 +14,7 @@ export function Button({
   ...props
 }: ButtonProps) {
   const base =
-    "flex items-center justify-center gap-2.5 rounded-[14px] font-normal transition-all duration-200 px-8.75 py-5 h-17 cursor-pointer"
+    "inline-flex items-center justify-center gap-2.5 rounded-[14px] font-normal transition-all duration-200 px-8.75 py-5 cursor-pointer"
 
   const variants: Record<ButtonVariant, string> = {
     primary:
