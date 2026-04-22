@@ -1,7 +1,8 @@
-import { Navbar } from "../layout/Navbar";
-import { Button } from "../ui/Button";
+import { Navbar } from "../layout/navbar";
+import { Button } from "../ui/button";
 
 import megaphone from "../../assets/images/illustrations/megaphone.svg";
+import { CompanyLogos } from "../company-logos";
 
 export function Hero() {
   return (
@@ -26,6 +27,8 @@ export function Hero() {
           className="max-w-150 w-full h-auto"
         />
       </div>
+
+      <CompanyLogos />
     </div>
   );
 }

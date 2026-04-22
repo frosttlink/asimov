@@ -1,5 +1,5 @@
 import logo from "../../assets/logos/logo.svg"
-import { Button } from "../ui/Button"
+import { Button } from "../ui/button"
 
 export function Navbar() { 
     const navItems = [
