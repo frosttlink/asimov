@@ -1,4 +1,4 @@
-import Marquee from "react-fast-marquee";
+import Marquee  from "react-fast-marquee";
 
 import amazonLogo from "../assets/logos/companies/amazon.svg";
 import dribbbleLogo from "../assets/logos/companies/dribbble.svg";
@@ -7,7 +7,7 @@ import notionLogo from "../assets/logos/companies/notion.svg";
 import netflixLogo from "../assets/logos/companies/netflix.svg";
 import zoomLogo from "../assets/logos/companies/zoom.svg";
 
-const MarqueeComponent = Marquee.default ?? Marquee;
+const MarqueeComponent = (Marquee as any).default ?? Marquee;
 
 export function CompanyLogos() {
   return (
