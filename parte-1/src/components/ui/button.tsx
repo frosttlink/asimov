@@ -14,15 +14,15 @@ export function Button({
   ...props
 }: ButtonProps) {
   const base =
-    "inline-flex items-center justify-center gap-2.5 rounded-[14px] font-normal transition-all duration-200 px-8.75 py-5 cursor-pointer"
+    "inline-flex items-center justify-center gap-2.5 rounded-[14px] font-normal transition-smooth active:scale-95 px-8.75 py-5 cursor-pointer"
 
   const variants: Record<ButtonVariant, string> = {
     primary:
-      "bg-dark text-white border border-dark",
+      "bg-dark text-white border border-dark hover:bg-black",
     secondary:
-      "bg-transparent text-black border border-dark",
+      "bg-transparent text-black border border-dark hover:bg-grey",
     tertiary:
-      "bg-green text-black border border-green ",
+      "bg-green text-black border border-green hover:bg-[#a8f050]",
   }
 
   return (

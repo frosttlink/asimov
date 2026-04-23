@@ -16,7 +16,7 @@ export function Card({
   ...props
 }: CardProps) {
   const base =
-    "flex items-center justify-between w-[600px] h-[310px] rounded-[45px] border-[1px] p-[50px] gap-8"
+    "flex items-center justify-between w-[600px] h-[310px] rounded-[45px] border-[1px] p-[50px] gap-8 transition-smooth"
 
   const variants: Record<CardVariant, string> = {
     primary:
@@ -34,7 +34,7 @@ export function Card({
     >
       <div className="flex flex-col justify-between h-full flex-1">
         <div>{children}</div>
-        <a href="#" className="text-sm font-medium hover:underline">
+        <a href="#" className="text-sm font-medium hover:underline transition-smooth">
           Learn more
         </a>
       </div>

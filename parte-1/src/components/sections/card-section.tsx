@@ -1,23 +1,26 @@
-import { CardContainer } from "../ui/card-container"
-import { Heading } from "../ui/heading"
-import { Link } from "../ui/link"
+import { CardContainer } from "../ui/card-container";
+import { Heading } from "../ui/heading";
+import { Link } from "../ui/link";
 
-import magnifierIlustration from "../../assets/images/illustrations/magnifier.svg"
-import clickIlustration from "../../assets/images/illustrations/click.svg"
-import happyFaceIlustration from "../../assets/images/illustrations/happy-face.svg"
-import emailsIlustration from "../../assets/images/illustrations/emails.svg"
-import tabsIlustration from "../../assets/images/illustrations/tabs-explorer.svg"
-import dataIlustration from "../../assets/images/illustrations/data.svg"
+import magnifierIlustration from "../../assets/images/illustrations/magnifier.svg";
+import clickIlustration from "../../assets/images/illustrations/click.svg";
+import happyFaceIlustration from "../../assets/images/illustrations/happy-face.svg";
+import emailsIlustration from "../../assets/images/illustrations/emails.svg";
+import tabsIlustration from "../../assets/images/illustrations/tabs-explorer.svg";
+import dataIlustration from "../../assets/images/illustrations/data.svg";
 
 export function CardSection() {
   return (
-    <div className="grid grid-cols-2 gap-10">
-
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
       <CardContainer
         variant="primary"
         illustration={magnifierIlustration}
         title={
-          <Heading variant="primary" fontSize="text-h3" fontWeight="font-medium">
+          <Heading
+            variant="primary"
+            fontSize="text-h3"
+            fontWeight="font-medium"
+          >
             Search engine optimization
           </Heading>
         }
@@ -32,7 +35,11 @@ export function CardSection() {
         variant="secondary"
         illustration={clickIlustration}
         title={
-          <Heading variant="secondary" fontSize="text-h3" fontWeight="font-medium">
+          <Heading
+            variant="secondary"
+            fontSize="text-h3"
+            fontWeight="font-medium"
+          >
             Pay-per-click advertising
           </Heading>
         }
@@ -47,7 +54,11 @@ export function CardSection() {
         variant="tertiary"
         illustration={happyFaceIlustration}
         title={
-          <Heading variant="secondary" fontSize="text-h3" fontWeight="font-medium">
+          <Heading
+            variant="secondary"
+            fontSize="text-h3"
+            fontWeight="font-medium"
+          >
             Social Media Marketing
           </Heading>
         }
@@ -77,7 +88,11 @@ export function CardSection() {
         variant="secondary"
         illustration={tabsIlustration}
         title={
-          <Heading variant="secondary" fontSize="text-h3" fontWeight="font-medium">
+          <Heading
+            variant="secondary"
+            fontSize="text-h3"
+            fontWeight="font-medium"
+          >
             Content Creation
           </Heading>
         }
@@ -102,7 +117,6 @@ export function CardSection() {
           </Link>
         }
       />
-
     </div>
-  )
+  );
 }

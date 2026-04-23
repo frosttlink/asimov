@@ -27,3 +27,9 @@
   /* Line height */
   --leading-p-mob: 1.5; /* 24px */
 }
+
+@layer utilities {
+  .transition-smooth {
+    @apply transition-all duration-300 ease-out;
+  }
+}

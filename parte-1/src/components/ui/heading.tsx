@@ -18,7 +18,7 @@ export function Heading({
   ...props
 }: HeadingProps) {
   const base =
-    `inline ${fontSize} ${fontWeight} rounded-[7px] px-1 py-0.5 color-black box-decoration-clone leading-snug`
+    `inline ${fontSize} ${fontWeight} rounded-[7px] px-1 py-0.5 color-black box-decoration-clone leading-snug transition-smooth`
 
   const variants: Record<HeadingVariant, string> = {
     primary:
