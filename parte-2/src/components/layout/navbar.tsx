@@ -9,10 +9,8 @@ export function Navbar() {
       <div className="mx-auto max-w-350 px-8 py-5">
         <div className="flex items-center justify-between">
           
-          {/* Logo */}
           <div className="text-white text-xl font-semibold">Axion</div>
 
-          {/* Desktop */}
           <div className="hidden md:flex items-center gap-8">
             <a className="text-white/60 hover:text-white transition-colors">
               Cursos
@@ -28,7 +26,6 @@ export function Navbar() {
             </button>
           </div>
 
-          {/* Mobile Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden text-white"
@@ -38,7 +35,6 @@ export function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <div
         className={`md:hidden absolute top-full left-0 w-full bg-black/95 backdrop-blur-md transition-all duration-300 overflow-hidden ${
           isOpen ? "max-h-80 opacity-100" : "max-h-0 opacity-0"
